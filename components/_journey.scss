@@ -1,0 +1,51 @@
+.journey{
+  padding: clamp(5rem, 8vw, 8rem) var(--container-padding);
+   border-bottom: var(--section-border);
+}
+
+.timeline {
+  max-width: 50rem;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  padding-left: 1.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0 0 2.5rem 1rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__marker {
+  position: absolute;
+  top: 0.3rem;
+  left: -2.12rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  background: var(--background);
+}
+
+.timeline__date {
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+.timeline__item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.timeline__item p {
+  margin-top: 0.5rem;
+  color: var(--muted-foreground);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}

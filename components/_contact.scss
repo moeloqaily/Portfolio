@@ -1,0 +1,9 @@
+.services,
+.contact{
+  padding: clamp(5rem, 8vw, 8rem) var(--container-padding);
+   border-bottom: var(--section-border);
+}
+
+.contact__button {
+  margin-top: 0.5rem;
+}

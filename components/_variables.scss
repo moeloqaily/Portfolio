@@ -1,0 +1,24 @@
+
+:root {
+  
+
+  --background: oklch(18% 0.004 60);
+  --foreground: oklch(96% 0.008 80);
+  --card: oklch(22.5% 0.005 60);
+  --primary: oklch(69% 0.19 34);
+  --primary-foreground: oklch(15% 0 0);
+  --secondary: oklch(27% 0.005 60);
+  --muted: oklch(24% 0.005 60);
+  --muted-foreground: oklch(71% 0.01 80);
+  --accent: oklch(33% 0.03 70);
+  --border: oklch(36% 0.006 60);
+  --signal: oklch(83.5% 0.151 79);
+  --green: oklch(71% 0.15 153);
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --container-padding: clamp(1.25rem, 6vw, 6rem);
+  --section-border: 1px solid var(--border);
+}

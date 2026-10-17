@@ -1,0 +1,58 @@
+
+#theme {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-toggle {
+  justify-self: end;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--card);
+  cursor: pointer;
+}
+
+.theme-toggle::before {
+  content: "☀️";
+}
+
+#theme:checked + .theme-toggle::before {
+  content: "🌙";
+}
+
+#theme:focus-visible + .theme-toggle {
+  outline: 2px solid var(--signal);
+  outline-offset: 4px;
+}
+
+/* Light Theme */
+
+.container:has(#theme:checked) {
+  --background: oklch(97% 0.008 80);
+  --foreground: oklch(20% 0.01 60);
+  --card: oklch(100% 0 0);
+  --secondary: oklch(93% 0.005 60);
+  --muted: oklch(94% 0.005 60);
+  --muted-foreground: oklch(42% 0.01 60);
+  --accent: oklch(91% 0.02 70);
+  --border: oklch(84% 0.008 60);
+  color-scheme: light;
+}
+
+.container:has(#theme:checked) .about__code,
+.container:has(#theme:checked) .code-card__header {
+  background: #171717;
+  color: #e5e5e5;
+}
+
+.container:has(#theme:checked) .code-card__filename,
+.container:has(#theme:checked) .code-card__footer {
+  color: #aaa;
+}

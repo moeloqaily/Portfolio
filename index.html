@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171615" />
+    <meta
+      name="description"
+      content="Mohamed's front-end development portfolio."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Mohamed | Front-End Developer</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <header class="navbar">
+        <a href="#home" class="navbar__title">
+          Mohamed<span class="dot">.</span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="navbar__links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <input type="checkbox" id="theme" />
+        <label
+          for="theme"
+          class="theme-toggle"
+          aria-label="Toggle color theme"
+          title="Toggle color theme"
+        ></label>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="home" id="home">
+          <div class="home__content">
+            <p class="hero__eyebrow">
+              <span class="status-dot"></span>
+              FRONT-END DEVELOPER
+            </p>
+
+            <h1 class="home__header">
+              Hi, I'm<br />
+              <span class="dot">Mohamed.</span><br />
+              Front-End<br />
+              Developer<span class="dot">.</span>
+            </h1>
+
+            <p class="description">
+              I build responsive, interactive, and user-friendly web
+              experiences.
+            </p>
+
+            <div class="home__links">
+              <a href="assets/Mohamed-CV.pdf" class="home__cv" download>
+                Download CV <span aria-hidden="true">↓</span>
+              </a>
+              <a href="#contact" class="secondary">
+                Let's Talk <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="hero__meta">
+              <span>Based in Egypt</span>
+              <span>Always learning</span>
+            </div>
+            <br />
+            <div class="social-links">
+              <a
+                href="https://github.com/moeloqaily"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mohamed-aloqaily"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+
+              <a href="mailto:moeloqaily@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/mohamedibrahim0o/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://x.com/mohamedeloqaily"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__image">
+            <img
+              src="assets/profile__img1-removebg-preview.png"
+              alt="Portrait of Mohamed"
+              fetchpriority="high"
+            />
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+          <div class="about__content">
+            <span class="about__snt"> 01 / The person behind the pixels </span>
+
+            <h2 class="home__header">A little about me.</h2>
+
+            <p class="description">
+              Good websites aren't just built. They're considered.
+            </p>
+
+            <p class="about__statement">
+              I'm a front-end developer who cares about
+              <span class="dot">how things work</span>
+              and how they <span class="dot">feel.</span>
+            </p>
+
+            <p class="description">
+              I enjoy the space where design meets code: taking an idea,
+              figuring out the details, and shaping it into a web experience
+              people actually want to use. Curious by nature, always learning,
+              and happiest when the small things come together.
+            </p>
+          </div>
+
+          <!-- Code Card -->
+          <div class="about__code" aria-label="About me code card">
+            <div class="code-card__header">
+              <div class="code-card__dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-card__filename">about.js</span>
+              <span class="code-card__language">JS</span>
+            </div>
+
+            <div class="code-card__body" aria-label="Developer profile code">
+              <div class="code-line">
+                <span class="line-number">1</span>
+                <code
+                  ><span class="code-purple">const</span>
+                  <span class="code-blue pob">developer</span> =
+                  <span class="code-yellow po">{</span></code
+                >
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">2</span>
+                <code class="code-indent">
+                  <span class="code-blue">name</span
+                  ><span class="code-yellow">:</span>
+                  <span class="code-green">"Mohamed Al-Oqaily"</span>,
+                </code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">3</span>
+                <code class="code-indent">
+                  <span class="code-blue">role</span
+                  ><span class="code-yellow">:</span>
+                  <span class="code-green">"Front-End Developer"</span>,
+                </code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">4</span>
+                <code class="code-indent">
+                  <span class="code-blue">Uni</span
+                  ><span class="code-yellow">:</span>
+                  <span class="code-green">"Zagazig University"</span>,
+                </code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">5</span>
+                <code class="code-indent">
+                  <span class="code-blue">learning</span
+                  ><span class="code-yellow">:</span>
+                  <span class="code-green">"MERN Stack"</span>,
+                </code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">6</span>
+                <code class="code-indent">
+                  <span class="code-blue">mindset</span
+                  ><span class="code-yellow">:</span>
+                  <span class="code-green">"Always learning"</span>
+                </code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">7</span>
+                <code><span class="code-yellow">}</span>;</code>
+              </div>
+
+              <div class="code-line code-line--empty">
+                <span class="line-number">8</span>
+                <code></code>
+              </div>
+
+              <div class="code-line">
+                <span class="line-number">9</span>
+                <code
+                  ><span class="code-purple">export default</span>
+                  <span class="code-blue">developer</span>;</code
+                >
+              </div>
+            </div>
+
+            <div class="code-card__footer">
+              <span><span class="status-dot"></span> Ready to build</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section-block" id="skills">
+          <span class="about__snt">02 / What I work with</span>
+          <h2 class="home__header">My toolkit<span class="dot">.</span></h2>
+
+          <p class="description">
+            The tools I'm learning and using to build better web experiences.
+          </p>
+
+          <div class="skills__grid">
+            <article class="skill-card">
+              <span class="skill-card__number">01 / STRUCTURE</span>
+              <h3>HTML5</h3>
+              <p>Semantic markup and well-structured web pages.</p>
+              <span class="skill-card__tag">Markup</span>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-card__number">02 / DESIGN</span>
+              <h3>CSS3</h3>
+              <p>Responsive layouts, Flexbox, Grid, and modern styling.</p>
+              <span class="skill-card__tag">Styling</span>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-card__number">03 / INTERACTION</span>
+              <h3>JavaScript</h3>
+              <p>Building my foundations in interactive web development.</p>
+              <span class="skill-card__tag">Currently learning</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects section-block" id="projects">
+          <span class="about__snt">03 / My work</span>
+
+          <h2 class="home__header">
+            Things I've built<span class="dot">.</span>
+          </h2>
+
+          <p class="description">
+            A selection of projects that reflect my learning and progress.
+          </p>
+
+          <div class="projects__grid">
+            <!-- Project 01 -->
+            <article class="project-card">
+              <div class="project-card__visual visual--dashboard">
+                <span class="visual__label">01 — Profile Dashboard</span>
+
+                <div class="project-preview">
+                  <iframe
+                    src="https://your-live-site.vercel.app"
+                    title="Profile Dashboard Preview"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <div class="project-card__top">
+                  <h3>Profile Dashboard</h3>
+                  <span class="project-card__index">01</span>
+                </div>
+
+                <p>
+                  A personal profile interface focused on clean layouts and
+                  responsive design.
+                </p>
+
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Responsive</span>
+                </div>
+
+                <div class="project-card__links">
+                  <a
+                    href="https://moeloqaily.github.io/profile-dashborad/"
+                    class="project-card__link project-card__link--live"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/moeloqaily/profile-dashborad"
+                    class="project-card__link project-card__link--github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project-card">
+              <div class="project-card__visual visual--portfolio">
+                <span class="visual__label">02 — Portfolio</span>
+
+                <div class="project-preview">
+                  <iframe
+                    src="https://moeloqaily.github.io/profile-dashborad/"
+                    title="Personal Portfolio Preview"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <div class="project-card__top">
+                  <h3>Personal Portfolio</h3>
+                  <span class="project-card__index">02</span>
+                </div>
+
+                <p>
+                  A personal website showcasing my skills, projects, and
+                  front-end journey.
+                </p>
+
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-card__links">
+                  <a
+                    href="https://moeloqaily.github.io/profile-dashborad/"
+                    class="project-card__link project-card__link--live"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/moeloqaily/profile-dashborad"
+                    class="project-card__link project-card__link--github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Learning Journey -->
+        <section class="journey section-block" id="journey">
+          <span class="about__snt">04 / The journey</span>
+          <h2 class="home__header">
+            One step at a time<span class="dot">.</span>
+          </h2>
+          <p class="description">
+            Growing my skills through practice, projects, and continuous
+            learning.
+          </p>
+
+          <div class="timeline">
+            <article class="timeline__item">
+              <span class="timeline__marker"></span>
+              <div>
+                <span class="timeline__date">FOUNDATION</span>
+                <h3>HTML & Web Structure</h3>
+                <p>Learning how to create accessible, organized web pages.</p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__marker"></span>
+              <div>
+                <span class="timeline__date">BUILDING</span>
+                <h3>CSS & Responsive Design</h3>
+                <p>
+                  Creating complete page layouts that adapt to different
+                  screens.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__marker"></span>
+              <div>
+                <span class="timeline__date">IN PROGRESS</span>
+                <h3>JavaScript Fundamentals</h3>
+                <p>Developing the skills needed to bring interfaces to life.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section-block" id="services">
+          <span class="about__snt">05 / What I can help with</span>
+          <h2 class="home__header">
+            Simple ideas, built well<span class="dot">.</span>
+          </h2>
+
+          <div class="services__grid">
+            <article class="service-card">
+              <span class="service-card__number">01</span>
+              <h3>Responsive Web Pages</h3>
+              <p>
+                Building pages that work across desktop, tablet, and mobile.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="service-card__number">02</span>
+              <h3>Personal Profile Pages</h3>
+              <p>
+                Creating simple personal pages with information and social
+                links.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="service-card__number">03</span>
+              <h3>Landing Pages</h3>
+              <p>
+                Implementing focused landing pages from a reference or brief.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section-block" id="contact">
+          <span class="about__snt">06 / Get in touch</span>
+          <h2 class="home__header">
+            Have an idea?<br />Let's talk<span class="dot">.</span>
+          </h2>
+
+          <p class="description">
+            I'm open to connecting, learning, and discussing front-end
+            opportunities.
+          </p>
+
+          <a
+            class="home__cv contact__button"
+            href="mailto:moeloqaily@gmail.com"
+          >
+            Email Me<span aria-hidden="true">↗</span>
+          </a>
+          <br />
+          <br />
+          <div class="social-links">
+            <a
+              href="https://github.com/moeloqaily"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mohamed-aloqaily"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+
+            <a href="mailto:moeloqaily@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mohamedibrahim0o/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://x.com/mohamedeloqaily"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <a href="#home" class="navbar__title">
+          Mohamed Al-Oqaily<span class="dot">.</span>
+        </a>
+        <p>moeloqaily@gmail.com</p>
+        <a href="#home" class="footer__top">Back to top ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>

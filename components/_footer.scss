@@ -1,0 +1,20 @@
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem var(--container-padding);
+}
+
+.footer p,
+.footer__top {
+  color: var(--muted-foreground);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+
+.footer__top:hover {
+  color: var(--primary);
+}
